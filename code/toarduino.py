@@ -14,12 +14,7 @@ print('serial open')
 while True:
     op = input("숫자 입력")
     ser.write(op.encode('utf-8'))
-    # time.sleep(0.5)
-    # res = ser.readline()
-    # print(res, len(res.decode()))
-    # res_packet = res.decode()[:len(res)-1]
-    # print(res_packet)
-    # print('\n')
+
     if op == '999':
         ser.close()
         break
