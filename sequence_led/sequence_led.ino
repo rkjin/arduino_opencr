@@ -36,63 +36,63 @@ void setup() {
 }
 // the loop function runs over and over again forever
 void loop() {
-      digitalWrite(22, a);delay(100);    
-      digitalWrite(23, b);delay(100);    
-      digitalWrite(24, c);delay(100);    
-      digitalWrite(25, d);delay(100);    
-      digitalWrite(36, e);delay(100);    
+  digitalWrite(22, a);delay(100);    
+  digitalWrite(23, b);delay(100);    
+  digitalWrite(24, c);delay(100);    
+  digitalWrite(25, d);delay(100);    
+  digitalWrite(36, e);delay(100);    
 
-      digitalWrite(22, f);delay(100);    
-      digitalWrite(23, f);delay(100);    
-      digitalWrite(24, f);delay(100);    
-      digitalWrite(25, f);delay(100);    
-      digitalWrite(36, f);delay(100);          
+  digitalWrite(22, f);delay(100);    
+  digitalWrite(23, f);delay(100);    
+  digitalWrite(24, f);delay(100);    
+  digitalWrite(25, f);delay(100);    
+  digitalWrite(36, f);delay(100);          
 }
 
 void serialEvent(){
-    x = Serial.readString().toInt();
-    Serial.println(x);
-    if (x == 1){
-      a = 1;
-      b = 0;
-      c = 1;
-      d = 0;
-      e = 0;
-      f = 0;
-    }
-    else if (x == 2){
-      a = 0;
-      b = 1;
-      c = 0;
-      d = 1;
-      e = 1;
-      f = 0;
-    }
-    else if (x == 3){
-      a = 1;
-      b = 1;
-      c = 1;
-      d = 1;
-      e = 1;
-      f = 0;
-    }
-    else if (x == 4){
-      a = 0;
-      b = 0;
-      c = 0;
-      d = 0;
-      e = 0;
-      f = 0;     
-    }
-    else if (x == 5){
-      a = 1;
-      b = 1;
-      c = 1;
-      d = 1;
-      e = 1;
-      f = 1;     
-    }
-    else {
-      
-    }
+  x = Serial.readString().toInt();
+  Serial.println(x);
+  if (x == 1){
+    a = 1;
+    b = 0;
+    c = 1;
+    d = 0;
+    e = 0;
+    f = 0;
+  }
+  else if (x == 2){
+    a = 0;
+    b = 1;
+    c = 0;
+    d = 1;
+    e = 1;
+    f = 0;
+  }
+  else if (x == 3){
+    a = 1;
+    b = 1;
+    c = 1;
+    d = 1;
+    e = 1;
+    f = 0;
+  }
+  else if (x == 4){
+    a = 0;
+    b = 0;
+    c = 0;
+    d = 0;
+    e = 0;
+    f = 0;     
+  }
+  else if (x == 5){
+    a = 1;
+    b = 1;
+    c = 1;
+    d = 1;
+    e = 1;
+    f = 1;     
+  }
+  else {
+    
+  }
 }
